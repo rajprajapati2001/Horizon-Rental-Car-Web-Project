@@ -1,0 +1,76 @@
+<style>
+.image-grid { padding-top: 20px; display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));  grid-gap: 10px; }
+img { max-width: 100%; height: auto; border-radius: 12px; }
+</style>
+
+<body style="background-image: url('../../images/x_background_64x64.png');">
+<label style="font-family: Verdana, sans-serif; font-size: 32px; margin-top: 20px; margin: 5px;">Gallery</label><br> 
+<center>
+<div class="image-grid" id="imageGrid">
+ <!-- Images will be inserted here using JavaScript -->
+</div>
+</center>
+</body>
+<script type="text/javascript">
+// Array of image URLs
+const imageUrls = [ 
+ '../../images/cars_images/img_cars_view_01.jpeg', 
+ '../../images/cars_images/img_cars_view_02.jpeg', 
+ '../../images/cars_images/img_cars_view_03.jpeg', 
+ '../../images/cars_images/img_cars_view_04.jpeg', 
+ '../../images/cars_images/img_cars_view_05.jpeg', 
+ '../../images/cars_images/img_cars_view_06.jpeg', 
+ '../../images/cars_images/img_cars_view_07.jpeg', 
+ '../../images/cars_images/img_cars_view_08.jpeg', 
+ '../../images/cars_images/img_cars_view_09.jpeg', 
+ '../../images/cars_images/img_cars_view_10.jpeg', 
+ '../../images/cars_images/img_cars_view_11.jpeg', 
+ '../../images/cars_images/img_cars_view_12.jpeg', 
+ '../../images/cars_images/img_cars_view_13.jpeg', 
+ '../../images/cars_images/img_cars_view_14.jpeg', 
+ '../../images/cars_images/img_cars_view_15.jpeg', 
+ '../../images/cars_images/img_cars_view_16.jpeg', 
+ '../../images/cars_images/img_cars_view_17.jpeg', 
+ '../../images/cars_images/img_cars_view_18.jpeg', 
+ '../../images/cars_images/img_cars_view_19.jpeg', 
+ '../../images/cars_images/img_cars_view_20.jpeg', 
+ '../../images/cars_images/img_cars_view_21.jpeg', 
+ '../../images/cars_images/img_cars_view_22.jpeg', 
+ '../../images/cars_images/img_cars_view_23.jpeg', 
+ '../../images/cars_images/img_cars_view_24.jpeg', 
+ '../../images/cars_images/img_cars_view_25.jpeg', 
+ '../../images/cars_images/img_cars_view_26.jpeg', 
+ '../../images/cars_images/img_cars_view_27.jpeg', 
+ '../../images/cars_images/img_cars_view_28.jpeg', 
+ '../../images/cars_images/img_cars_view_29.jpeg', 
+ '../../images/cars_images/img_cars_view_30.jpeg', 
+ '../../images/cars_images/img_cars_view_31.jpeg', 
+ '../../images/cars_images/img_cars_view_32.jpeg', 
+ '../../images/cars_images/img_cars_view_33.jpeg', 
+ '../../images/cars_images/img_cars_view_34.jpeg', 
+ '../../images/cars_images/img_cars_view_35.jpeg', 
+ '../../images/cars_images/img_cars_view_36.jpeg', 
+ '../../images/cars_images/img_cars_view_37.jpeg', 
+ '../../images/cars_images/img_cars_view_38.jpeg', 
+ '../../images/cars_images/img_cars_view_39.jpeg', 
+ '../../images/cars_images/img_cars_view_40.jpeg', 
+ '../../images/cars_images/img_cars_view_41.jpeg', 
+ '../../images/cars_images/img_cars_view_42.jpeg', 
+];
+
+// Function to create and append image elements to the grid
+function createImageGrid() {
+ const imageGrid = document.getElementById('imageGrid');
+
+ imageUrls.forEach((imageUrl) => {
+     const imgElement = document.createElement('img');
+     imgElement.src = imageUrl;
+     imgElement.alt = 'Image';
+     imageGrid.appendChild(imgElement);
+ });
+}
+
+// Call the function to populate the grid
+createImageGrid();
+
+</script>

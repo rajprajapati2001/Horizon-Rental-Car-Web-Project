@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Admin Page</title>
+ <link rel="icon" type="image/x-icon" href="../images/logo/horizon_cars_logo_500x500.png">
+ <!--INDEX CSS-->
+ <link rel="stylesheet" href="../style/admin_index.css">
+ <link rel="stylesheet" href="../style/index_style.css">
+ <link rel="stylesheet" href="../style/user_index_style.css">
+</head>
+<body>
+<!--Menu on Top-->
+<div class="admin_index_menu">
+<!--IMG Logo & Slogan-->
+<table>
+<tr>
+<td>
+ <table style="position: absolute; left: 0;">
+  <tr>
+  <td><img id="nev-menu_but" class="menu_img" src="../images/icon/menu_white_512x512px.png"/></td> 
+  <td><img class="menu_img" src="../images/logo/horizon_cars_logo_500x500.png"/></td>
+  <td><img class="menu_slogan_img" src="../images/logo/horizon_rental_car_slogan.png"/></td>
+  <td><div style="font-size: 28px; font-family: 'Courier New', Courier, monospace; padding-left: 20px; text-shadow: 1px 1px 4px black;">| Welcome 2 Admin Site</div></td>
+  </tr>
+  </table>
+</td>
+
+</table>
+</div>
+
+<div>
+<div id="nev-panal" class="nevagition_panal">
+ <img id="nev-close_but" class="close_img" src="../images/icon/close_icon.png"/>
+ <center>
+ <img class="main_admin_big_logo" src="../images/icon/admin_software_engineer.png" /><br>
+ <label class="panal-title">Admin Panal</label><br><br>
+</center>
+
+ <hr id="line_1" class="hr_line" style="margin-bottom: 20px;">
+ <div id="database"><img class="panal-icons" src="../images/icon/database_icons.png"/><label class="panal-options">Database</label></div><br>
+ <div id="new_product"><img class="panal-icons" src="../images/icon/new-product.png"/><label class="panal-options">New Product</label></div><br>
+ <div id="new_admin"><img class="panal-icons" src="../images/icon/admin_setting.png"/><label class="panal-options">New Admin</label></div><br>
+ <div id="user_details"><img class="panal-icons" src="../images/icon/group_icons.png"/><label class="panal-options">User Details</label></div><br>
+ <div id="about"><img class="panal-icons" src="../images/icon/information-button.png"/><label class="panal-options">About</label></div><br>
+ <hr id="line_2" class="hr_line" style="margin-top: 20px;">
+ <div id="logout" onclick="LogOutFunction()"><img class="panal-icons" src="../images/icon/logout.png"/><label class="panal-options">Logout</label></div><br>
+
+</div> 
+
+</div>
+
+<iframe id="database_iframe" src="admin_php/database.php" style="border: 0px; width: 100vw; height: 65vw;" scrolling="no"></iframe>
+<iframe id="new_product_iframe" src="admin_php/new_product.php" style="border: 0px; width: 100vw; height: 65vw;" scrolling="no"></iframe>
+<iframe id="new_admin_iframe" src="admin_php/new_admin.php" style="border: 0px; width: 100vw; height: 65vw;" scrolling="no"></iframe>
+<iframe id="user_details_iframe" src="admin_php/user_details.php" style="border: 0px; width: 100vw; height: 65vw;" scrolling="no"></iframe>
+<iframe id="about_iframe" src="admin_php/about.html" style="border: 0px; width: 100vw; height: 65vw;" scrolling="no"></iframe>
+</body>
+<script src="../jQuery.js"></script>
+
+<script>
+function LogOutFunction() {
+// Remove all tabs
+var tabList = document.querySelectorAll(".tab"); // Assuming your tabs have a class name "tab"
+tabList.forEach(function(tab) {
+    tab.parentNode.removeChild(tab);
+});
+// Open a new location
+window.location.href = "../index.html"; // Replace with the URL you want to open
+}  
+</script>
+
+<script>
+$(document).ready(function(){
+  $("#nev-panal").hide();
+
+  $("#line_1").hide();
+  $("#database").hide();
+  $("#new_product").hide();
+  $("#new_admin").hide();
+  $("#user_details").hide();
+  $("#about").hide();
+  $("#line_2").hide();
+  $("#logout").hide();
+
+ $("#nev-menu_but").click(function(){
+  $("#nev-panal").show().animate({width: '250px'}, 1000);
+  $("#line_1").delay(1000).fadeIn();
+  $("#database").delay(1000).fadeIn();
+  $("#new_product").delay(1000).fadeIn();
+  $("#new_admin").delay(1000).fadeIn();
+  $("#user_details").delay(1000).fadeIn();
+  $("#about").delay(1000).fadeIn();
+  $("#line_2").delay(1000).fadeIn();
+  $("#logout").delay(1000).fadeIn();
+ });
+
+ $("#nev-close_but").click(function(){
+  $("#nev-panal").animate({width: '0px'}, 300).hide(500);;
+  $("#line_1").hide();
+  $("#database").hide();
+  $("#new_product").hide();
+  $("#new_admin").hide();
+  $("#user_details").hide();
+  $("#about").hide();
+  $("#line_2").hide();
+  $("#logout").hide();
+ });
+
+
+ //On Admin Panal Layout Click
+ $("#database_iframe").show();
+ $("#new_product_iframe").hide();
+ $("#new_admin_iframe").hide();
+ $("#user_details_iframe").hide();
+ $("#about_iframe").hide();
+
+ //DATABASE CLICK
+ $("#database").click(function(){
+  $("#database_iframe").show(); 
+  $("#new_product_iframe").hide();
+  $("#new_admin_iframe").hide();
+  $("#user_details_iframe").hide();
+  $("#about_iframe").hide();
+
+  $("#nev-panal").animate({width: '0px'}, 300).hide(500);;
+  $("#line_1").hide();
+  $("#database").hide();
+  $("#new_product").hide();
+  $("#new_admin").hide();
+  $("#user_details").hide();
+  $("#about").hide();
+  $("#line_2").hide();
+  $("#logout").hide();
+ });
+
+ //NEW PRODUCT CLICK
+ $("#new_product").click(function(){
+  $("#database_iframe").hide(); 
+  $("#new_product_iframe").show();
+  $("#new_admin_iframe").hide();
+  $("#user_details_iframe").hide();
+  $("#about_iframe").hide();
+
+  $("#nev-panal").animate({width: '0px'}, 300).hide(500);;
+  $("#line_1").hide();
+  $("#database").hide();
+  $("#new_product").hide();
+  $("#new_admin").hide();
+  $("#user_details").hide();
+  $("#about").hide();
+  $("#line_2").hide();
+  $("#logout").hide();
+ });
+
+ //NEW ADMIN CLICK
+ $("#new_admin").click(function(){
+  $("#database_iframe").hide(); 
+  $("#new_product_iframe").hide();
+  $("#new_admin_iframe").show();
+  $("#user_details_iframe").hide();
+  $("#about_iframe").hide();
+
+  $("#nev-panal").animate({width: '0px'}, 300).hide(500);;
+  $("#line_1").hide();
+  $("#database").hide();
+  $("#new_product").hide();
+  $("#new_admin").hide();
+  $("#user_details").hide();
+  $("#about").hide();
+  $("#line_2").hide();
+  $("#logout").hide();
+ });
+
+ //User Details CLICK
+ $("#user_details").click(function(){
+  $("#database_iframe").hide(); 
+  $("#new_product_iframe").hide();
+  $("#new_admin_iframe").hide();
+  $("#user_details_iframe").show();
+  $("#about_iframe").hide();
+
+  $("#nev-panal").animate({width: '0px'}, 300).hide(500);;
+  $("#line_1").hide();
+  $("#database").hide();
+  $("#new_product").hide();
+  $("#new_admin").hide();
+  $("#user_details").hide();
+  $("#about").hide();
+  $("#line_2").hide();
+  $("#logout").hide();
+ });
+
+ //ABOUT CLICK
+ $("#about").click(function(){
+  $("#database_iframe").hide(); 
+  $("#new_product_iframe").hide();
+  $("#new_admin_iframe").hide();
+  $("#user_details_iframe").hide();
+  $("#about_iframe").show();
+
+  $("#nev-panal").animate({width: '0px'}, 300).hide(500);;
+  $("#line_1").hide();
+  $("#database").hide();
+  $("#new_product").hide();
+  $("#new_admin").hide();
+  $("#user_details").hide();
+  $("#about").hide();
+  $("#line_2").hide();
+  $("#logout").hide();
+ });
+
+});  
+</script>
+</html>

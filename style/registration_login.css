@@ -1,0 +1,40 @@
+body { margin: 0px; padding: 0px; }
+
+.main_div { position: relative; margin-top: 10px; margin-left: 30px; padding: 5px; background-color: #00000079; width: 300px; height: auto; border-radius: 20px; }
+/*MAIN LOGO*/
+img.icon_main_logo {margin-top: 5px; border: 1px solid #002f9d; box-shadow: 0px 0px 2px 2px #ffffff; margin-bottom: 10px; border-radius: 50%; width: 50px; height: 50px;}
+img.icon_main_logo:hover {box-shadow: 0px 0px 2px 4px #002f9d;}
+
+.close_icon { background: transparent; position: absolute; top: 0; right: 0; margin-top: 5px; margin-right: 5px; width: 25px; height: 25px; }
+.close_icon:hover { box-shadow: inset 0px 0px 0px transparent; }
+.title { color: #ffffff; font-family: Verdana; font-size: 20px; }
+
+/*REGISTRATION Button A*/
+.l_reg_but_r {background-color: #00000082; color: aliceblue; border-top-left-radius: 12px; border-bottom-left-radius: 12px; border: 0.5px solid black; width: 135px; height: 30px; }
+.l_reg_but_f {background-color: #2daeff; font-weight: 700; box-shadow: inset 0px 0px 20px #002f9d; color: white; border-top-left-radius: 12px; border-bottom-left-radius: 12px; border: 0.5px solid black; width: 135px; height: 30px; }
+
+.l_reg_but_r:hover {text-shadow: 0 0 7px #2daeff,0 0 3px #3eff2d;}
+/*REGISTRATION Button B*/
+.s_reg_but_r {background-color: #00000082; color: aliceblue; border-top-right-radius: 12px; border-bottom-right-radius: 12px; border: 0.5px solid black; width: 135px; height: 30px; }
+.s_reg_but_f {background-color: #2daeff; font-weight: 700; box-shadow: inset 0px 0px 20px #002f9d; color: white; border-top-right-radius: 12px; border-bottom-right-radius: 12px; border: 0.5px solid black; width: 135px; height: 30px; }
+
+.s_reg_but_r:hover {text-shadow: 0 0 7px #2daeff,0 0 3px #3eff2d;}
+
+
+/*ALL Img Tag*/
+img {border-top-left-radius: 15px; border-bottom-left-radius: 15px; background-color: #ffffff85; width: 31.5px; height:31.5px;}
+img:hover {box-shadow: inset 0px 0px 3px #2daeff;}
+
+/*ALL Input Tag*/
+input[type=text]{background-color: #00000082; border: 0.5px solid black; border-top-right-radius: 15px; border-bottom-right-radius: 15px; padding-left: 12px; margin-left: 2px; color: aliceblue; width: 230px; height: 30px; font-size: 15px;}
+input[type=password]{background-color: #00000082; border: 0.5px solid black; border-top-right-radius: 15px; border-bottom-right-radius: 15px; padding-left: 12px; margin-left: 2px; padding-right: 10px; color: aliceblue; width: 230px; height: 30px; font-size: 15px;}
+input[type=date]{background-color: #00000082; border: 0.5px solid black; border-top-right-radius: 15px; border-bottom-right-radius: 15px; padding-left: 12px; margin-left: 2px; padding-right: 10px; color: aliceblue; width: 230px; height: 30px; font-size: 15px;}
+input[type=number]{background-color: #00000082; border: 0.5px solid black; border-top-right-radius: 15px; border-bottom-right-radius: 15px; padding-left: 12px; margin-left: 2px; padding-right: 10px; color: aliceblue; width: 230px; height: 30px; font-size: 15px;}
+
+/*RESET & SUBMIT {BUTTONS}*/
+.r_but {border-bottom-left-radius: 12px; width: 130px; height: 30px; border: 0.5px solid black; background-color: #3a3a3a82; color: white;}
+.r_but:hover {box-shadow: inset 5px 5px 5px 0px #2dafff82; font-weight: 600; border: 0.5px solid #2daeffdf;}
+.s_but {border-bottom-right-radius: 12px; width: 130px; height: 30px; border: 0.5px solid black; background-color: #3a3a3a82; color: white;}
+.s_but:hover {box-shadow: inset 5px 5px 5px 0px #2aff1282; font-weight: 600; border: 0.5px solid #2aff12d9;}
+
+.alert_text_css { font-size: 12px; color: white; font-family: monospace; margin-bottom: 5px; }

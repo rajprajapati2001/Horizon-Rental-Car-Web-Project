@@ -1,0 +1,116 @@
+html { padding: 0px; margin: 0px; }
+body { overflow-y: auto; overflow-x: hidden; margin: 0px; padding: 0px; background-color: #e2e2e2;}
+
+.index_menu { background-color: black; width: 100vw; height: 50px; position: relative;}
+.menu_img { width: 35px; height: 35px; margin-left: 5px; }
+.menu_slogan_img { width: 200px; height: 35px; margin-left: 2px}
+
+.reg_div { position: absolute; right: 0; color: white; margin-right: 5px;}
+
+/*Login & Admin TXT*/
+.log_div,.admin_div { width: 90px; height: 25px; border: 1.5px solid white; border-radius: 10px;}
+.log_txt,.admin_txt { font-family: monospace; margin-left: 5px;}
+
+.big_slogan_img { position: relative; width: 100vw; }
+
+.get_start { width: 300px; height: 40px; color: black; font-size: 18px; border-radius: 30px; transform: translateY(-25px); font-family: Verdana, sans-serif; border: 2px solid #ff2b2b; background-color: #244cff; }
+.get_start:hover { color: white; font-weight: 600; background-color: #0029e1; }
+
+
+/* Records Display */
+.reg_div_a { margin-left: 15px; margin-right: 15px; margin-top: 5px; margin-bottom: 5px; float: left; border: 0.5px solid black; background-color: #ffffff87; border-radius: 12px; padding: 20px; width: min-content; height: auto; }
+.reg_div_a:hover { margin-left: 15px; margin-right: 15px; margin-top: 5px; margin-bottom: 5px; border: 0.5px solid black; float: left; background-color: #d9d9d989; border-radius: 12px; padding: 20px; width: min-content; height: auto; }
+.img_style { width: 180px; height: 180px; object-fit: contain;}
+.img_rate { width: 25px; height: 25px; border-radius: 12px; margin-right: 5px; margin-top: 5px;}
+
+.name { color: black; font-family: Verdana, sans-serif; font-size: 18px; margin: 2.5px;}
+
+.addtocart { margin-top: 5px; width: 120px; height: 30px; border: 0; border-radius: 10px; color: azure; background-color: #0040ff8c;}
+.addtocart:hover { margin-top: 5px; width: 120px; height: 30px; border: 0; border-radius: 10px; color: azure; background-color: #ffa6008c;}
+
+/*Gray Bottom Part*/
+.service_container { display: grid; grid-template-columns: auto auto auto auto auto auto; margin-top: 5px; margin-right: 10px; margin-left: 10px; align-items: center; }
+.service_item { margin: 5px; height: auto; color: #000000; background-color: #ffffff80; border-radius: 20px; align-items: center; }
+.service_item:hover { background-color: #ffffffbf; }
+.service_img { margin-top: 4px; width: 40px; height: 40px; }
+.service_lable { font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 10px; font-weight: 650; }
+.service_p { font-family: Arial, Helvetica, sans-serif; font-size: 7px; margin: 2px; margin-left: 5px; margin-right: 5px; margin-bottom: 5px;}
+
+/*Para DIV*/
+.f_div { margin-left: 20px; }
+.f_title { padding-top: 10px; text-align: center;padding-left: 20px; width: 50px; font-family: Verdana, sans-serif; font-size: 17px; }
+.f_title_w { color: azure; font-weight: 550; padding-top: 10px; text-align: center;padding-left: 20px; width: 50px; font-family: Verdana, sans-serif; font-size: 17px; }
+.f_para { font-family: 'Lucida Sans', 'Lucida Sans Regular',sans-serif; font-size: 12.5px; margin-right: 30px; margin-left: 30px; }
+
+/*Black Bottom Part*/
+.bottom_about { margin-bottom: 110px; background-color: #000000; width: 100vw; height: 500px; color: aliceblue; }
+.lecture_lable { font-family: Verdana, sans-serif; font-size: 22px; margin-right: 30px; margin-left: 30px; }
+.lecture_p { font-family: 'Lucida Sans', 'Lucida Sans Regular',sans-serif; font-size: 10px; margin-right: 30px; margin-left: 30px; }
+
+/*About Part*/
+.about_me { border: 2px solid white; border-radius: 50px; margin-right: 10px; width: 100px; height: 100px; }
+.items_icon { width: 20px; height: 20px; }
+.qr_code { margin-left: 30px; width: 100px; height: 110px; }
+
+/*End Page*/
+.end_div { position: relative; width: 100vw; }
+.bottom_slogan_img { width: 100vw; position: absolute; bottom: 0px; }
+
+.hr_line { width: 95%; color: white; }
+
+/*Popup CSS
+.popup-div { position: fixed;	z-index: 1;	left: 0; top: 0;	width: 100%;	height: 100%;	overflow: auto;	background-color: #00000066;	display: none; }
+.popup-content {	transform: translate(0px, -50px); margin: 10% auto; height: 80px; width: 150px; }
+.show { position: fixed;	z-index: 1;	left: 0; top: 0;	width: 100%;	height: 100%;	overflow: auto;	background-color: #00000066; display: block; }
+*/
+.popup-div { position: relative;	left: 0; top: 0;	width: 100%;	height: 100%;	overflow: auto;	background-color: #00000066;	display: none; }
+.popup-content {	background-color: #f50000; margin: 10% auto; height: 80px; width: 150px; }
+.show { position: relative;	left: 0; top: 0;	width: 100%;	height: 100%;	overflow: auto;	background-color: #00000066; display: block; }
+
+
+.close_icon { transform: translate(210px, 0px); width: 25px; height: 25px; }
+.close_icon:hover { box-shadow: inset 0px 0px 0px transparent; }
+
+.float_login_ifram { position: absolute; top: 0; right: 0; border: 0px; width: 350px; height: 450px;}
+.regclose_but { position: absolute; top: 25px; right: 25px; width: 25px; height: 25px; }
+.adminclose_but { position: absolute; top: 25px; right: 25px; width: 25px; height: 25px; }
+
+/*MOBILE VERSION*/
+@media only screen and (max-width: 600px) { 
+/*Login & Admin TXT*/
+.log_div,.admin_div { width: auto; height: 25px; border: 1.5px solid white; border-radius: 10px;}
+.log_txt,.admin_txt { font-size: 0px; display: none;}
+
+/*Gray Bottom Part*/
+.service_container { display: grid; grid-template-columns: auto auto; margin: 5px; margin-bottom: 0px; align-items: center; }
+.service_item { margin: 3px; height: 55px; color: #000000; background-color: #ffffff80; border-radius: 20px; align-items: center; }
+.service_img { margin-top: 4px; width: 30px; height: 30px; }
+.service_lable { font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 10px; font-weight: 650; }
+.service_p { display: none;}
+
+/*Popup CSS
+.popup-div { position: fixed;	z-index: 1;	left: 0; top: 0;	width: 100%;	height: 100%;	overflow: auto;	background-color: #00000066;	display: none; }
+.popup-content {	transform: translate(0px, -30px); margin: 10% auto; height: 80px; width: 150px; }
+.show { position: fixed;	z-index: 1;	left: 0; top: 0;	width: 100%;	height: 100%;	overflow: auto;	background-color: #00000066; display: block; }
+*/
+.close_icon { transform: translate(200px, 0px); overflow: hidden; width: 25px; height: 25px; }
+.close_icon:hover { box-shadow: inset 0px 0px 0px transparent; }
+.float_login_ifram { border: 0px; width: 350px; height: 420px; transform: translate(-80px, 0px); overflow:hidden; }
+
+/*Para DIV*/
+.f_div { margin-left: 0px; }
+.f_title { padding-top: 10px; text-align: center;padding-left: 5px; width: 50px; font-family: Verdana, sans-serif; font-size: 12px; }
+.f_title_w { color: azure; font-weight: 550; padding-top: 10px; text-align: center;padding-left: 5px; width: 50px; font-family: Verdana, sans-serif; font-size: 12px; }
+.f_para { font-family: 'Lucida Sans', 'Lucida Sans Regular',sans-serif; font-size: 9px; margin-right: 10px; margin-left: 10px; }
+
+/*Black Bottom Part*/
+.bottom_about { margin-bottom: 65px; background-color: #000000; width: 100vw; height: 500px; color: aliceblue; }
+.qr_code { display: none; width: 0px; height: 0px; }
+}
+
+/*SCROLLING BAR*/
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-button { width: 4px; height: 1px; }
+::-webkit-scrollbar-track { background-color: #eee; border: thin solid lightgray; box-shadow: 0px 0px 3px #dfdfdf inset; border-radius: 0px; }
+::-webkit-scrollbar-thumb { background-color: #999; border: thin solid gray; border-radius: 0px; }
+::-webkit-scrollbar-thumb:hover { background-color: #696969; }

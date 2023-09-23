@@ -1,0 +1,8 @@
+.user_index_menu { background-color: #000000; width: 100vw; height: 50px; position: relative;}
+.menu_img { width: 35px; height: 35px; margin-left: 5px; }
+.menu_slogan_img { width: 200px; height: 35px; margin-left: 2px; filter: drop-shadow(5px 5px 6px black);}
+
+.titles_div { position: absolute; right: 0; padding-top: 3.5px;  margin-right: 5px; }
+.top_title { font-size: 27px; font-family: Arial, sans-serif; color: #ffffff80; padding-right: 15px; } 
+.top_title_b { font-size: 27px; font-family: Arial, sans-serif; color: #ffffff; font-weight: 600; padding-right: 15px; } 
+

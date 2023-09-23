@@ -1,0 +1,12 @@
+html,body { margin: 0px; padding: 0px; }
+
+.admin_index_menu { background-color: #df8d00; width: 100vw; height: 50px; position: relative;}
+
+.main_admin_big_logo { width: 120px; height: 120px; margin-top: 40px; }
+.close_img { position: absolute; right: 0; top: 0; margin: 15px; width: 25px; height: 25px; }
+.panal-title { font-family: monospace; font-size: 25px; color: azure; margin-top: 10px; margin-bottom: 10px;}
+.panal-options { padding-left: 10px; padding-bottom: 5px; color: azure; font-size: 25px; font-family: Verdana, sans-serif;}
+.panal-options:hover { padding-left: 10px; font-weight: 500; padding-bottom: 5px; color: #ffa200; font-size: 25px; font-family: Verdana, sans-serif;}
+.panal-icons { margin-left: 20px; margin-top: 5px; margin-bottom: 5; width: 25px; height: 25px; }
+
+.nevagition_panal { position: absolute; left: 0; top: 0; width: 0px; height: 100vw; background-color: #000000bf; }

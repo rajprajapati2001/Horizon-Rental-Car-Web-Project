@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Home Page</title>
+ <link rel="icon" type="image/x-icon" href="../images/logo/horizon_cars_logo_500x500.png">
+ <!--INDEX CSS-->
+ <link rel="stylesheet" href="../style/user_index_style.css">
+ <link rel="stylesheet" href="../style/index_style.css">
+</head>
+
+<body>
+<!--Menu on Top-->
+<div class="user_index_menu">
+<!--IMG Logo & Slogan-->
+<table>
+<tr>
+<td>
+ <table style="position: absolute; left: 0;">
+  <tr>
+  <td><img class="menu_img" src="../images/logo/horizon_cars_logo_500x500.png"/></td>
+  <td><img class="menu_slogan_img" src="../images/logo/horizon_rental_car_slogan.png"/></td>
+  </tr>
+  </table>
+</td>
+<!--Login Button-->
+<td>
+
+<table class="titles_div">
+<tr>
+<td><img src="../images/icon/grocery-store.png" style="width: 35px; height: 35px; margin-right: 20px;"/></td>
+<td id="home" class="top_title_b">Home</td> 
+<td id="gallery" class="top_title">Gallery</td>
+<td id="about" class="top_title">About</td>
+<td id="logout" class="top_title" onclick="LogOutFunction()">Logout</td>
+</tr>
+</table>  
+
+</td>
+
+</tr> 
+</table>
+</div>
+
+<!--Home-->
+<iframe id="home_iframe" src="user_php/home.php" style="width: 100vw; height: 180vw; border: 0px;" scrolling="no"></iframe>
+<!--GALLERY-->
+<iframe id="gallery_iframe" src="user_php/gallery.html" style="width: 100vw; height: 180vw; border: 0px;" scrolling="no"></iframe>
+<!--ABOUT-->
+<iframe id="about_iframe" src="user_php/about.html" style="width: 100vw; height: 377.5vw; border: 0px;" scrolling="no"></iframe>
+
+</body>
+
+<script src="../jQuery.js"></script>
+
+<script>
+function LogOutFunction() {
+// Remove all tabs
+var tabList = document.querySelectorAll(".tab"); // Assuming your tabs have a class name "tab"
+tabList.forEach(function(tab) {
+    tab.parentNode.removeChild(tab);
+});
+// Open a new location
+window.location.href = "../index.html"; // Replace with the URL you want to open
+}  
+</script>
+
+<script>
+$(document).ready(function(){
+//Top MENU
+
+$("#home_iframe").show();
+$("#gallery_iframe").hide();
+$("#about_iframe").hide();  
+
+$("#home").click(function(){
+  $("#home_iframe").show();
+  $("#gallery_iframe").hide();
+  $("#about_iframe").hide();  
+
+  $("#home").removeClass("top_title");
+  $("#home").addClass("top_title_b");
+
+  $("#gallery").removeClass("top_title_b");
+  $("#gallery").addClass("top_title");
+
+  $("#about").removeClass("top_title_b");
+  $("#about").addClass("top_title");
+});
+
+$("#gallery").click(function(){
+  $("#home_iframe").hide();
+  $("#gallery_iframe").show();
+  $("#about_iframe").hide(); 
+
+  $("#home").removeClass("top_title_b");
+  $("#home").addClass("top_title");
+
+  $("#gallery").removeClass("top_title");
+  $("#gallery").addClass("top_title_b");
+
+  $("#about").removeClass("top_title_b");
+  $("#about").addClass("top_title");
+});
+
+$("#about").click(function(){
+  $("#home_iframe").hide();
+  $("#gallery_iframe").hide();
+  $("#about_iframe").show();
+  
+  $("#home").removeClass("top_title_b");
+  $("#home").addClass("top_title");
+
+  $("#gallery").removeClass("top_title_b");
+  $("#gallery").addClass("top_title");
+
+  $("#about").removeClass("top_title");
+  $("#about").addClass("top_title_b");
+});
+
+
+});
+</script>
+</html>
