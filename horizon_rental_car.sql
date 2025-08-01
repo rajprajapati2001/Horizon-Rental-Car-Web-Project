@@ -16,8 +16,7 @@ CREATE TABLE horizon_signup (
 
 /* Insert query in Registration */
 INSERT INTO horizon_signup (signup_id, signup_name, signup_email, signup_birthdate, signup_mobile, signup_password) VALUES
-(1, "Raj Prajapati", "rp5876907@gmail.com", "2001-02-14", "6353636344", "raj_7048868500"),
-(2, "Pramit Patel", "pramitp500@gmail.com", "2001-02-12", "7698040601", "raj_7048868500");
+(1, "Raj Prajapati", "rp5876907@gmail.com", "2001-02-14", "0000000000", "Abc_1234567890");
 
 
 /*--------ADMIN_TABLE----------------------------------------------------------------------------------------------------------------------------*/
