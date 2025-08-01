@@ -31,7 +31,7 @@ Step 8: > and now you can Run the WebSite.
 | admin_id  | raj_admin  |-|  user_id   |  rp5876907@gmail.com |
 | psdk      | admin_18110|-|  psdk   |  Abc_1234567890      |
 
-## Hoome Page Screenshot
+## Home Page Screenshot
 ![HorizonScreenshot](screenshots/horizon_cars_logo_HomePage.png)
 
 ## About
