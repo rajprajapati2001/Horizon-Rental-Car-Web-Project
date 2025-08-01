@@ -1,5 +1,5 @@
 ![icon](screenshots/horizon_cars_logo_128x128.png)
-# Horizon Rental Car
+# Horizon Rental Car 
 **Horizon Rental Car** is a Dynamic Web Project designed for car rental experience where Users can easily login or sign up to access a wide range of vehicles available for rent. Our platform features a comprehensive list of various cars, allowing you to browse and choose the perfect vehicle to suit your needs. Even you can Explore our Gallery section, where you'll discover the latest car models, showcasing their new looks and innovative designs.
 
 For Admin section we provides a secure and separate Login Space. As an administrator, you have full control: **add new cars for rent**, view the **list of cars available** on the user dashboard, and **edit car records** as needed. The admin also has access to a comprehensive **list of all signed-up users**, enabling efficient management of the user base. Horizon Rental Car offers a seamless and intuitive experience for both renters and administrators.
