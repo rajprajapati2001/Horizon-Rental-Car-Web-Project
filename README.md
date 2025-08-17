@@ -13,7 +13,7 @@ For Admin section we provides a secure and separate Login Space. As an administr
 Step 1: > Extract Horizon_Rental_Cars.rar file.
 Step 2: > Open Xamp Server >`(Run as Administrator)` and Open Chrome.
 Step 3: > on Xampp Control Panel Start Apache and MySQL Modules.
-Step 4:> write this " http://localhost/phpmyadmin/ " and phpMyAdmin Site will Open up.
+Step 4: > write this " http://localhost/phpmyadmin/ " and phpMyAdmin Site will Open up.
 Step 5: > On Import Section There is A " Choose File " Option.
 Step 6: > Import this "horizon_rental_car.sql " file on Database.
 Step 7: > Now Open this " http://localhost/Horizon_Rental_Cars/ " Link.
